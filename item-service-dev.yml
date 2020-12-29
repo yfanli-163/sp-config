@@ -2,6 +2,16 @@ spring:
   application:
     name: item-service
     
+  cloud:
+    config:
+      override-none: true
+      
+  rabbitmq:
+    host: 192.168.111.5
+    port: 5672
+    username: admin
+    password: admin
+    
 #server:
 #  port: 8001
 
@@ -21,9 +31,3 @@ spring:
   profiles: item2
 server:
   port: 8002  
-  
-spring:
-  ......
-  cloud:
-    config:
-      override-none: true
